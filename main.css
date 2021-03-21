@@ -1,0 +1,340 @@
+body{
+	background: url("https://img.freepik.com/free-vector/vintage-ornamental-flowers-background_52683-28040.jpg?size=626&ext=jpg");
+	height: auto;
+  	width: auto;
+}
+
+.name{
+  	text-align: center;
+}
+.name img{																			/* Profile pic */
+  	border-radius:50%;
+  	height: 260px;
+  	margin: 80px auto 0 8px;
+  	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
+}
+
+.name p{																			/* Profile name */
+	color: red;
+  	font-family: 'cabin', serif;													
+  	font-size: 40px ;
+  	margin: 20px auto 0px auto;
+}
+
+.icons{																				/* icons */
+	text-align: center;
+	margin: 17px auto 20px auto;
+	padding: 0px;
+
+}
+
+.icons li{
+	display:inline ;
+	margin: 0px 8px;
+}
+
+img{
+	height: 28px;
+	width: auto;
+
+}
+
+																					/* Nav Bar */
+header{
+	z-index: 1000000;
+	position: -webkit- sticky;
+	position: sticky;
+	top: 0px;
+}
+
+.tabs{
+	display: flex;
+	font-family: 'tahoma';
+	justify-content: center;
+	align-items: : center;
+}
+
+.tabs  li{
+	list-style: none;
+	margin:30px 25px;
+}
+
+.tabs  li a{
+	font-size: 25px;
+	text-decoration: none;
+	color: #464646;
+}
+
+.tabs  li a:hover {
+  	color: red;
+}
+
+
+h3{
+	text-align: center;
+	padding-top: 10px;
+}
+
+#myBtn {
+  font-family: 'tahoma';
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99999; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Set a background color */
+  color: red; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 36px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: transparent; /* Add a dark-grey background on hover */
+  color: black;
+}
+
+header.sticky{
+	background: white;
+	line-height: 0px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0), 0 6px 6px rgba(0,0,0,0.15);
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+header.sticky ul li a{
+	color: black;
+	font-size: 20px;
+	padding: 0px;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+																							/* info */
+#info {
+	background-color: white;
+	margin: 0px 15px 30px 10px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0.9,0.9,0.9,0.1);
+}
+
+#info h3{
+	text-align: center;
+	padding: 13px 0px;
+}
+
+#info h4{
+	text-align: center;
+	padding-top: 10px
+}
+
+#info ul{
+	list-style: none;
+	padding: 5px 13px;
+}
+span{
+	
+	font-size: 18px;
+	margin: 0px 0px 23px 28px;
+}
+span.a {
+  display: inline-block; /* the default for span */
+  width: 400px;
+  height: 180px;
+  border-radius: 7px;  
+  background-color: gold; 
+
+}
+
+span.b {
+  display: inline-block; /* the default for span */
+  width: 400px;
+  height: 180px;
+  border-radius: 7px;  
+  background-color: gold; 
+}
+
+
+span.c {
+  display: inline-block;
+  width: 400px;
+  height: 180px;
+  border-radius: 7px;    
+  background-color: gold; 
+}
+
+span.c a{
+	text-decoration: none;
+	color: blue;
+}
+
+																							/* skill */
+
+#sk {
+	background-color: white;
+	margin: 0px 15px 30px 15px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+	padding: 0px 10px 12px 20px;
+}
+
+
+.skillbar {
+	margin: 15px 20px 10px 25px;
+	position:relative;
+	width: 100vw;
+	background:#eee;
+	height:35px;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	width: 150px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+}
+
+.skillbar-title span {
+
+	padding:0 5px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:2px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+																							/* projects */
+
+#projects {
+	background-color: white;
+	margin: 0px 15px 30px 15px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+}
+
+.proj {
+	display:flex;
+}
+.proj li{
+	list-style: none;
+}
+
+.proj p{
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+}
+
+.proj img{
+	height: 125px;
+	width: auto;
+	border-radius: 50%;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
+	margin-bottom: -20px;
+}
+
+
+#projects p a{
+	text-decoration: none;
+}
+
+																							/* work */
+
+#work {
+	background-color: white;
+	margin: 0px 15px 30px 15px ;
+	border-radius: 7px;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
+}
+
+.exp {
+	display:flex;
+}
+.exp li{
+	list-style: none;
+}
+
+#work p{
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+}
+
+#work img{
+	height: 125px;
+	width: auto;
+	border-radius: 50%;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
+	margin-bottom: -20px;
+}
+
+
+#work p a{
+	text-decoration: none;
+}
+
+																								/* Progress bar */
+.header {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: white;
+}
+
+.progress-bar {
+  height: 8px;
+  background: black;
+  width: 0%;
+}
