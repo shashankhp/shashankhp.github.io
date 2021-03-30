@@ -185,7 +185,7 @@ span.c a{
 .skillbar {
 	margin: 15px 20px 10px 25px;
 	position:relative;
-	width: 100vw;
+	width: 190%;
 	background:#eee;
 	height:35px;
 	border-radius:8px;
