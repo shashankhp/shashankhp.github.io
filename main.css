@@ -183,7 +183,7 @@ span.c a{
 .skillbar {
 	margin: 15px 20px 10px 25px;
 	position:relative;
-	width: 180%;
+	width: 190%;
 	background:#eee;
 	height:35px;
 	border-radius:8px;
@@ -217,7 +217,6 @@ span.c a{
 }
 
 .skillbar-title span {
-
 	padding:0 5px;
 	height:35px;
 	line-height:35px;
