@@ -4,75 +4,12 @@ body{
   	width: auto;
 }
 
-.name{
-  	text-align: center;
-}
-.name img{																			/* Profile pic */
-  	border-radius:50%;
-  	height: 260px;
-  	margin: 80px auto 0 8px;
-  	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
-}
-
-.name p{																			/* Profile name */
-	color: red;
-  	font-family: 'cabin', serif;													
-  	font-size: 40px ;
-  	margin: 20px auto 0px auto;
-}
-
-.icons{																				/* icons */
-	text-align: center;
-	margin: 17px auto 20px auto;
-	padding: 0px;
-}
-
-.icons li{
-	display:inline ;
-	margin: 0px 8px;
-}
-
-img{
-	height: 28px;
-	width: auto;
-}
-
-																					/* Nav Bar */
-header{
-	z-index: 1000000;
-	position: -webkit- sticky;
-	position: sticky;
-	top: 0px;
-}
-
-.tabs{
-	display: flex;
-	font-family: 'tahoma';
-	justify-content: center;
-	align-items: : center;
-	margin: 30px 0px;
-}
-
-.tabs  li{
-	list-style: none;
-	margin:22px 25px;
-}
-
-.tabs  li a{
-	font-size: 25px;
-	text-decoration: none;
-	color: #464646;
-}
-
-.tabs  li a:hover {
-  	color: red;
-}
-
 h3{
 	text-align: center;
 	padding-top: 10px;
 }
 
+																			/* Button */
 #myBtn {
   font-family: 'tahoma';
   display: none; /* Hidden by default */
@@ -111,10 +48,44 @@ header.sticky ul li a{
 	transition-timing-function: ease;
 }
 
+.name{
+  	text-align: center;
+}
+
+.name img{																			/* Profile pic */
+  	border-radius:50%;
+  	height: 260px;
+  	margin: 75px auto 0 auto;
+  	box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 6px 6px rgba(0,0,0,0.2);
+}
+
+.name p{																			/* Profile name */
+	color: red;
+  	font-family: 'cabin', serif;													
+  	font-size: 40px ;
+  	margin: 20px auto 0px auto;
+}
+
+.icons{																				/* icons */
+	text-align: center;
+	margin: 17px auto 120px auto;
+	padding: 0px;
+}
+
+.icons li{
+	display:inline ;
+	margin: 0px 8px;
+}
+
+img{
+	height: 28px;
+	width: auto;
+}
+
 																							/* info */
 #info {
 	background-color: white;
-	margin: 0px 15px 30px 10px ;
+	margin: 0px 15px 30px 15px ;
 	border-radius: 7px;
 	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0.9,0.9,0.9,0.1);
 }
@@ -133,21 +104,27 @@ header.sticky ul li a{
 	list-style: none;
 	padding: 5px 13px;
 }
-span{
-	
-	font-size: 18px;
-	margin: 0px 0px 23px 28px;
+
+#info #in{
+	text-align: center;
 }
+
+span{	
+	font-size: 18px;
+	margin: 0px 10px 23px 10px;
+}
+
 span.a {
+	text-align: left;	
   display: inline-block; /* the default for span */
   width: 400px;
   height: 180px;
   border-radius: 7px;  
   background-color: gold; 
-
 }
 
 span.b {
+	text-align: left;
   display: inline-block; /* the default for span */
   width: 400px;
   height: 180px;
@@ -157,6 +134,7 @@ span.b {
 
 
 span.c {
+	text-align: left;
   display: inline-block;
   width: 400px;
   height: 180px;
@@ -176,16 +154,15 @@ span.c a{
 	margin: 0px 15px 30px 15px ;
 	border-radius: 7px;
 	box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.1);
-	padding: 0px 10px 12px 20px;
+	padding: 0px 5px 15px 5px;
 }
 
-
 .skillbar {
-	margin: 15px 20px 10px 25px;
+	margin: 15px 20px 10px 20px;
 	position:relative;
-	width: 190%;
+	width: 200%;
 	background:#eee;
-	height:35px;
+	height:30px;
 	border-radius:8px;
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
@@ -203,7 +180,7 @@ span.c a{
 
 .skillbar-title {
 	position:absolute;
-	width: 150px;
+	width: 130px;
 	font-weight:bold;
 	font-size:13px;
 	color:#ffffff;
@@ -259,6 +236,7 @@ span.c a{
 .proj {
 	display:flex;
 }
+
 .proj li{
 	list-style: none;
 }
@@ -276,9 +254,12 @@ span.c a{
 	margin-bottom: -20px;
 }
 
-
 #projects p a{
 	text-decoration: none;
+}
+
+#proj img:hover{
+	box-shadow: 0 10px 25px rgba(7, 250, 7, 0), 0 6px 6px rgba(0,0,0,0.2);
 }
 
 																							/* work */
@@ -310,12 +291,11 @@ span.c a{
 	margin-bottom: -20px;
 }
 
-
 #work p a{
 	text-decoration: none;
 }
 
-																								/* Progress bar */
+																					/* Progress bar */
 .header {
   position: fixed;
   bottom: 0;
@@ -334,4 +314,116 @@ span.c a{
   height: 8px;
   background: black;
   width: 0%;
+}
+
+
+																					/* For mobile Display */
+
+@media screen and (max-width: 530px){
+
+	.name img{																			/* Profile pic */
+		height: 150px;
+		margin: 80px auto 0 auto;
+  	}
+
+ 	.name p{																			/* Profile name */													
+  		font-size: 30px ;
+  		margin: 10px auto 0px auto;
+  	}
+
+
+	.icons{																				/* icons */
+		margin: 8px auto 80px auto;
+		padding: 0px;
+		}
+	.icons li{
+		display:inline ;
+		margin: 0px 5px;
+		}
+
+	img{
+		height: 20px;
+		width: auto;
+	}
+
+	span{	
+		font-size: 12px;
+		margin: 0px 8px 23px 8px;
+	}
+
+	span.a {
+		display: inline-block; /* the default for span */
+		width: 280px;
+		height: 120px; 
+		text-align: left;
+	  }
+	  
+	  span.b {
+		display: inline-block; /* the default for span */
+		width: 280px;
+		height: 120px;
+		text-align: left;
+	  }
+	  
+	  
+	  span.c {
+		display: inline-block;
+		width: 280px;
+		height: 120px; 
+	  }
+
+	span.c a{
+		text-decoration: none;
+		color: blue;
+	}
+
+	.skillbar {
+		margin: 11px 5px 10px 5px;
+		border: 0px;
+		padding: 0px;
+		width: 100%;
+		height: 20px;
+	}
+
+	.skillbar-title {
+		position:absolute;
+		width: 72px;
+		font-size: 8px;
+		height:25px;
+	}
+
+	.skillbar-bar{
+		height:25px;
+	}
+
+	.skillbar-title span {
+		border: 0px;
+		padding: 0px;
+		border-left: 0px;
+		line-height:25px;
+	}
+
+	.skill-bar-percent{
+		line-height:25px;
+		right:5px;
+		font-size:10px;
+		height:25px;
+	}	
+
+	.proj img{
+		height: 100px;
+	}
+
+	.proj p{
+		font-size: 12px;
+	}
+
+	#work p{
+		font-size: 12px;
+	}
+
+	#work img{
+		height: 100px;
+	}
+
 }
