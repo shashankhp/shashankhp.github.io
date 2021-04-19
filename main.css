@@ -316,9 +316,7 @@ span.c a{
   width: 0%;
 }
 
-
 																					/* For mobile Display */
-
 @media screen and (max-width: 530px){
 
 	.name img{																			/* Profile pic */
@@ -382,7 +380,7 @@ span.c a{
 		border: 0px;
 		padding: 0px;
 		width: 100%;
-		height: 20px;
+		height: 25px;
 	}
 
 	.skillbar-title {
