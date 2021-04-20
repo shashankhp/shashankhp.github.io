@@ -132,7 +132,6 @@ span.b {
   background-color: gold; 
 }
 
-
 span.c {
 	text-align: left;
   display: inline-block;
@@ -146,9 +145,7 @@ span.c a{
 	text-decoration: none;
 	color: blue;
 }
-
-																							/* skill */
-
+																/* skill */
 #sk {
 	background-color: white;
 	margin: 0px 15px 30px 15px ;
@@ -160,7 +157,7 @@ span.c a{
 .skillbar {
 	margin: 15px 20px 10px 20px;
 	position:relative;
-	width: 200%;
+	width: 194%;
 	background:#eee;
 	height:30px;
 	border-radius:8px;
@@ -345,8 +342,9 @@ span.c a{
 	}
 
 	span{	
-		font-size: 12px;
+		font-size: 13px;
 		margin: 0px 8px 23px 8px;
+		padding-top: 0px;
 	}
 
 	span.a {
@@ -376,10 +374,10 @@ span.c a{
 	}
 
 	.skillbar {
-		margin: 11px 5px 10px 5px;
+		margin: 8px 5px 10px 5px;
 		border: 0px;
 		padding: 0px;
-		width: 100%;
+		width: auto;
 		height: 25px;
 	}
 
@@ -398,11 +396,12 @@ span.c a{
 		border: 0px;
 		padding: 0px;
 		border-left: 0px;
+		height:25px;
 		line-height:25px;
 	}
 
 	.skill-bar-percent{
-		line-height:25px;
+		line-height:20px;
 		right:5px;
 		font-size:10px;
 		height:25px;
@@ -423,5 +422,15 @@ span.c a{
 	#work img{
 		height: 100px;
 	}
+}
 
+footer{
+	color: rgb(145, 144, 144);
+	background-color: #ffffff;
+	padding-bottom: 20px;
+}
+
+footer p{
+	color: rgb(92, 91, 91);
+	padding-top: 10px;
 }
